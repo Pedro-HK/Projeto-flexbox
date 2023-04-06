@@ -1,0 +1,624 @@
+body, h1, h2, h3, a, ul, li{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Nunito', 'Open Sans', 'Vollkorn', sans-serif;
+}
+
+/* header*/
+
+.navegacao-bg{
+    padding: 20px 0;
+    background-color: #F6F6F7;
+}
+
+.navegacao{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+.botao-contato-a{
+    text-decoration: none;
+    background-color: #10DFC2;
+    border: #10DFC2 solid 2px;
+    padding: 8px 68px;
+    border-radius: 15px;
+    color: #FBFBFB;
+    transition: all .1s linear;
+}
+
+.botao-contato-a:hover{
+    background-color: white;
+    color: #10DFC2;
+}
+
+.navegacao ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navegacao ul li a{
+    text-decoration: none;
+    color: #1C1C1D;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: all .1s linear;
+}
+
+.navegacao ul li + li{
+    margin-left: 40px;
+}
+
+.navegacao ul li a:hover{
+    color: #10DFC2;
+}
+
+.menu-icone{
+    display: none;
+}
+
+.menu-responsivo{
+    display: none;
+}
+
+.rocket-talents-background{
+    background: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.rocket-talents{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    width: 916px;
+}
+
+.texto-rocket{
+    max-width: 420px;
+    padding: 10px;
+}
+
+.texto-rocket h1{
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin: 24px 0;
+}
+
+.texto-rocket p{
+    font-size: 1.125rem;
+    line-height: 2;
+    max-width: 289px;
+}
+
+.imagens-rockets{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* main */
+
+/* Sobre o programa Rocket Talents */
+
+.sobre{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 866px;
+    padding: 0 30px;
+}
+
+.sobre-texto h2{
+    font-size: 2rem;
+    color: #032624;
+}
+
+.sobre-texto p + h2{
+    color: #032624;
+}
+
+.sobre-texto p + p{
+    color: #0EAFAC;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Como funciona */
+
+.como-funciona{
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 50px 115px;
+}
+
+.como-funciona h2{
+    color: #0EAFAC;
+    font-size: 2rem;
+}
+
+.como-funciona > p{
+    color: #032624;
+    max-width: 560px;
+    margin: 16px auto 50px;
+    line-height: 1.4;
+}
+
+.como-funciona-1{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1135px;
+}
+
+.como-funciona-item{
+    background-color: white;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 5px;
+    flex: 1 1 262px;
+    max-width: 262px;
+    height: 250px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px 10px 0 20px;
+    border-radius: 5px;
+    color: #032624;
+    margin-top: 30px;
+}
+
+.como-funciona-item p{
+    line-height: 1.5;
+}
+
+.como-funciona-item h3{
+    margin-top: 24px;
+    font-size: 1rem;
+}
+
+/* Requisitos */
+
+.requisitos{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto 0;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 866px;
+    padding: 0 30px;
+}
+
+
+.requisitos-texto h2{
+    margin-bottom: 24px;
+    font-size: 2rem;
+    color: #0EAFAC;
+}
+
+.requisitos-texto h3{
+    color: #032624;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.requisitos-texto li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+.requisitos-texto li::before{
+    content: '•';
+    color: #032624;
+    margin-right: 5px;
+}
+
+/* Detalhes */
+
+.detalhes{
+    display: flex;
+    flex-direction: row;
+    margin: 115px auto 60px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 866px;
+    padding: 0 30px;
+}
+
+.detalhes-texto{
+    max-width: 385px;
+}
+
+.detalhes-texto h2{
+    margin-bottom: 24px;
+    font-size: 2rem;
+    color: #0EAFAC;
+}
+
+.detalhes-texto h3{
+    color: #032624;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.detalhes-texto li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+.detalhes-texto li::before{
+    content: '•';
+    color: #032624;
+    margin-right: 5px;
+}
+
+/* Footer */
+
+/* Novidades */
+
+.novidades-bg{
+    padding: 50px;
+    background-color: #19DBD1;
+    color: white;
+}
+
+.novidades{
+    margin: 0 auto;
+    max-width: 866px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.novidades-texto h2{
+    font-size: 2rem;
+}
+
+.e-mail{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.e-mail label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#email{
+    margin: 10px 0 16px;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+.botao-email{
+    background-color: #FFB900;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 20px;
+    width: 100px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Montserrat', 'Nunito', 'Open Sans', 'Vollkorn', sans-serif;
+    font-weight: 600;
+    transition: all .1s linear;
+}
+
+
+/* Contato */
+
+.contato-bg{
+    background-color: #04254C;
+    padding-top: 50px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-between;
+    max-width: 1115px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.contato-1{
+    max-width: 430px;
+}
+
+.fale-conosco{
+    color: white;
+    text-decoration: none;
+    background-color: #FFB900;
+    border-radius: 10px;
+    padding: 8px 20px;
+    transition: all .1s linear;
+}
+
+.fale-conosco:hover{
+    padding: 10px 22px;
+}
+
+.telefone{
+    padding-left: 16px;
+}
+
+
+.contato-1-texto{
+    margin: 32px 0;
+}
+
+/* Serviços */
+
+.serviços{
+    width: 131px;
+}
+
+.serviços ul{
+    list-style: none;
+    line-height: 2.2;
+}
+
+.serviços h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* Endereço */
+
+.endereço{
+    display: flex;
+    flex-direction: column;
+    max-width: 412px;
+}
+
+.endereço-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.endereço-item-texto{
+    margin: 0 40px;
+}
+
+.endereço-item-texto h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.endereço-icone{
+    display: flex;
+    background-color: white;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsivo */
+
+
+@media screen and (max-width: 1050px){
+    .menu-icone{
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .navegacao{
+        margin: 0 30px;
+    }
+    .navegacao ul{
+        display: none;
+    }
+    .navegacao .botao-contato{
+        display: none;
+    }
+    .menu-responsivo ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .menu-responsivo ul li a{
+        text-decoration: none;
+        color: #1C1C1D;
+        font-size: 1.125rem;
+        font-weight: 500;
+        transition: all .1s linear;
+    }
+    .menu-responsivo ul li a:hover{
+        color: #10DFC2;
+    }
+    .menu-responsivo ul li{
+        margin-top: 20px;
+    }
+    .menu-responsivo .botao-contato-a{
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+    .abrir-menu{
+        display: block;
+    }
+}
+
+@media screen and (max-device-width: 1300px){
+    .como-funciona-1{
+        max-width: 844px;
+    }
+    .como-funciona-item-4{
+        margin: 30px auto 0;
+    }
+}
+
+@media screen and (max-device-width: 1048px){
+    .como-funciona-1{
+        max-width: 553px;
+    }
+    .como-funciona-item-4{
+        margin: 30px 0 0;
+    }
+    .contato{
+        justify-content: center;
+    }
+    .endereço{
+        flex-direction: row;
+        max-width: none;
+    }
+    .contato-1, .endereço, .serviços{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-device-width: 1016px) {
+    .novidades{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-device-width: 832px){
+    .imagens-rockets{
+        order: -1;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .rocket-talents{
+        max-width: 420px;
+        justify-content: center;
+        margin: 100px auto;
+    }
+    .logo-rocket-talents{
+        margin-top: 50px;
+    }
+    .endereço{
+        flex-direction: column;
+        max-width: 412px;
+    }
+}
+
+@media screen and (max-device-width: 800px){
+    .detalhes, .requisitos, .sobre{
+        flex-direction: column;
+    }
+    .detalhes-texto{
+        max-width: 471px;
+    }
+
+    .detalhes{
+        margin: 115px auto 60px;
+        max-width: 480px;
+        align-items: baseline;
+    }
+
+    .requisitos{
+        margin: 50px auto 0;
+        max-width: 480px;
+        align-items: baseline;
+    }
+
+    .sobre{
+        margin: 50px auto;
+        max-width: 480px;
+        align-items: baseline;
+    }
+
+    .novidades{
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 480px;
+    }
+
+}
+
+@media screen and (max-device-width: 762px) {
+    .como-funciona-1{
+        max-width: 262px;
+    }
+    #email{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-device-width: 646px){
+    .serviços{
+        width: 430px;
+    }
+}
+
+@media screen and (max-device-width: 492px){
+
+    .como-funciona{
+        padding: 50px 20px;
+    }
+
+    .rocket-talents-background{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-device-width: 370px){
+
+    .novidades-bg{
+        padding: 50px 30px;
+    }
+
+    #email{
+        max-width: 200px;
+    }
+
+    .foto-detalhes, .foto-sobre, .foto-requisitos{
+        max-width: 200px;
+    }
+
+    .como-funciona{
+        padding: 50px 10px;
+    }
+
+    .como-funciona-1{
+        max-width: 250px;
+    }
+
+    .como-funciona-item{
+        max-width: 250px;
+    }
+
+    #logo-rocket{
+        max-width: 250px;
+    }
+
+    #logo-rocket-talents{
+        max-width: 250px;
+    }
+
+    .imagens-rockets{
+        max-width: 250px;
+    }
+}

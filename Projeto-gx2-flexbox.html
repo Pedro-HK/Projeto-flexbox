@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,700;1,400&family=Open+Sans&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Projeto-gx2-flexbox.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <header class="header">
+        <section class="navegacao-bg">
+            <div class="navegacao">
+                <div class="logo-escura-1">
+                    <img src="img/Logo-1.png" alt="Logo da empresa GX2">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Soluções</a></li>
+                        <li><a href="#">Cases</a></li>
+                        <li><a href="#">Carreira</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                </nav>
+                <div class="botao-contato">
+                    <a href="#" class="botao-contato-a">Contato</a>
+                </div>
+                <button onclick="mostrarMenu()" class="menu-icone"><img src="icones/SVG/menu.svg" alt="Icone menu" class="icone-menu"></button>
+            </div>
+            <div class="menu-responsivo">
+                <nav>
+                    <ul>
+                        <li><a href="#">Soluções</a></li>
+                        <li><a href="#">Cases</a></li>
+                        <li><a href="#">Carreira</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                </nav>
+                <div class="botao-contato">
+                    <a href="#" class="botao-contato-a">Contato</a>
+                </div>
+            </div>
+        </section>
+        <section class="rocket-talents-background">
+            <div class="rocket-talents">
+                <div class="texto-rocket">
+                    <img src="img/Logo.png" alt="Logo da empresa GX2" class="logo-branca-1">
+                    <h1>Você está pronto(a) para decolar a sua carreira?</h1>
+                    <p>Nossa tripulação está pronta para crescer com você e formar novas estrelas no universo da TI!</p>
+                </div>
+                <div class="imagens-rockets">
+                    <div class="logo-rocket">
+                        <img src="img/Logo Rocket.svg" alt="Logo Rocket" id="logo-rocket">
+                    </div>
+                    <div class="logo-rocket-talents">
+                        <img src="img/Logo Rocket Talents.svg" alt="Logo Roket Talents" id="logo-rocket-talents">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="sobre">
+            <div class="sobre-texto">
+                <h2>Sobre o programa <br> Rocket Talents</h2>
+                <p>O Rocket Talents é uma solução prática e efetiva <br> para as empresas,<strong> formando novos talentos no mercado <br> de TI</strong> por um processo de capacitação intensa e eficaz.</p>
+                <p>É a porta de entrada para o seu futuro!</p>
+            </div>
+            <img src="img/Foto 1.png" alt="Pessoa apontando" class="foto-sobre">
+        </section>
+        <section class="como-funciona">
+            <h2>Como funciona</h2>
+            <p>Nossos<strong> especialistas técnicos irão ministrar os treinamentos </strong>com base nas tecnologias que são demandadas pelos nossos clientes.</p>
+            <div class="como-funciona-1">
+                <div class="como-funciona-item como-funciona-item-1">
+                    <img src="img/Caminho 219.svg" alt="Lupa" class="lupa">
+                    <h3>Recrutamento e seleção</h3>
+                    <p>Candidatos que têm o desejo de ingressarem na carreira de TI.</p>
+                </div>
+                <div class="como-funciona-item como-funciona-item-2">
+                    <img src="img/Caminho 220.svg" alt="Livro" class="livro">
+                    <h3>Pré Rocket</h3>
+                    <p>Etapa de 3 meses com conteúdo inicial de programação e mentoria.</p>
+                </div>
+                <div class="como-funciona-item como-funciona-item-3">
+                    <img src="img/Grupo 472.svg" alt="Foguete" class="foguete">
+                    <h3>Trabalhe na GX2</h3>
+                    <p>Após a etapa de Pré Rocket os candidatos concorrem às vagas de Rockets, Fazendo parte do time GX2, agora remunerado.</p>
+                </div>
+                <div class="como-funciona-item como-funciona-item-4">
+                    <img src="img/Grupo 467.svg" alt="Grupo" class="grupo">
+                    <h3>Rocket</h3>
+                    <p>Os Rockets que forem aprovados na última etapa serão inseridos no time, atuando com projetos de tecnologia da GX2.</p>
+                </div>
+            </div>
+        </section>
+        <section class="requisitos">
+            <img src="img/Foto 2.png" alt="Pessoa animada" class="foto-requisitos">
+            <div class="requisitos-texto">
+                <h2>Requisitos</h2>
+                <h3>Estamos buscando pessoas que:</h3>
+                <ul>
+                    <li>Desejam virar programadores;</li>
+                    <li>Morem na região de Porto Alegre ou grande Porto Alegre;</li>
+                    <li>Sejam curiosos(a);</li>
+                    <li>Gostem de colocar a mão na massa;</li>
+                    <li>Gostem de fazer parte de um time focado em resultados.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="detalhes">
+            <div class="detalhes-texto">
+                <h2>Detalhes importantes</h2>
+                <h3>Estamos buscando pessoas que:</h3>
+                <ul>
+                    <li>O treinamento é ministrado por um Líder Técnico do time GX2;</li>
+                    <li>São realizadas avaliações e feedback, referente ao desempenho técnico e comportamental;</li>
+                    <li>O cronograma de ensino é pré-estabelecido ao início das aulas.</li>
+                </ul>
+            </div>
+            <img src="img/Foto 3.png" alt="Pessoa olhando para notebook" class="foto-detalhes">
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="novidades-bg">
+            <div class="novidades">
+                <div class="novidades-texto">
+                    <h2>Receba nossas novidades</h2>
+                    <p>Fique por dentro dos conteúdos que preparamos para você!</p>
+                </div>
+                <div class="e-mail">
+                    <label for="email">Seu e-mail:</label>
+                    <input type="email" id="email">
+                    <button type="submit" class="botao-email">Assinar</button>
+                </div>
+            </div>
+        </section>
+        <section class="contato-bg">
+            <div class="contato">
+                <div class="contato-1">
+                    <img src="img/logo-gx2-fundo-escuro.png" alt="Logo da empresa GX2" class="logo-branca-2">
+                    <div class="contato-1-texto">
+                        <h3>Parceiro estratégico para a transformação digital da sua empresa!</h3>
+                        <p>Há 12 anos no mercado de TI, com abrangência nacional, alocando nossos talentos e construindo soluções inteligentes para nossos clientes e parceiros.</p>
+                    </div>
+                    <a href="#" class="fale-conosco">Fale conosco<img src="img/Caminho 221.svg" alt="Telefone" class="telefone"></a>
+                </div>
+                <div class="serviços">
+                    <h3>Serviços:</h3>
+                    <ul>
+                        <li>Outsourcing</li>
+                        <li>Labs & Projetos</li>
+                        <li>Esteira de testes</li>
+                        <li>Data Science</li>
+                        <li>Concepção</li>
+                        <li>DXP Liferay</li>
+                        <li>Blog</li>
+                        <li>Carreira</li>
+                    </ul>
+                </div>
+                <div class="endereço">
+                    <div class="endereço-item">
+                        <div class="endereço-icone">
+                            <div><img src="img/Caminho 223.svg" alt="Localização"></div>
+                        </div>
+                        <div class="endereço-item-texto">
+                            <h3>Porto Alegre - RS</h3>
+                            <p>+55 51 3062-7242 | Instituto Caldeira - Tv. São José, 455 - Navegantes</p>
+                        </div>
+                    </div>
+                    <div class="endereço-item">
+                        <div class="endereço-icone">
+                            <div><img src="img/Caminho 223.svg" alt="Localização"></div>
+                        </div>
+                        <div class="endereço-item-texto">
+                            <h3>São Paulo - SP</h3>
+                            <p>+55 11 3818.8969 | Av. Brig. Faria Lima 4509/8º andar Vila Olímpia</p>
+                        </div>
+                    </div>
+                    <div class="endereço-item">
+                        <div class="endereço-icone">
+                            <div><img src="img/Caminho 223.svg" alt="Localização"></div>
+                        </div>
+                        <div class="endereço-item-texto">
+                            <h3>Belo Horizonte - MG</h3>
+                            <p>+55 31 3555.3363 | Av. do Contorno 6594 / 7ºandar Bairro Savassi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="Projeto-gxs-flexbox.js"></script>
+</body>
+</html>

@@ -24,6 +24,6 @@ Desenvolver um site web, com um modelo de design pré-estabelecido, utilizando a
 
 1) Baixe as pastas "img", "Fontes" e "icones"
 
-2) Abra o arquivo "Projeto-gx2-flexbox.html" no Visual Studio Code
+2) Baixe os arquivos "Projeto-gx2-flexbox.html", "Projeto-gx2-flexbox.css" e "Projeto-gx2-flexbox.js"
 
-3) Execute o live preview do arquivo HTML "Projeto-gx2-flexbox.html"
+3) Abra o arquivo "Projeto-gx2-flexbox.html"

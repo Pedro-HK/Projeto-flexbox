@@ -129,10 +129,6 @@ body, h1, h2, h3, a, ul, li{
     color: #032624;
 }
 
-.sobre-texto p + h2{
-    color: #032624;
-}
-
 .sobre-texto p + p{
     color: #0EAFAC;
     font-size: 1rem;
@@ -144,7 +140,7 @@ body, h1, h2, h3, a, ul, li{
 .como-funciona{
     text-align: center;
     background-color: #F6F6F6;
-    padding: 50px 115px;
+    padding: 50px 50px;
 }
 
 .como-funciona h2{
@@ -165,7 +161,7 @@ body, h1, h2, h3, a, ul, li{
     margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1135px;
+    max-width: 1300px;
 }
 
 .como-funciona-item{
@@ -218,14 +214,9 @@ body, h1, h2, h3, a, ul, li{
 }
 
 .requisitos-texto li{
-    list-style: none;
+    list-style: '• ';
     font-size: 1rem;
-}
-
-.requisitos-texto li::before{
-    content: '•';
-    color: #032624;
-    margin-right: 5px;
+    list-style-position: inside;
 }
 
 /* Detalhes */
@@ -257,14 +248,9 @@ body, h1, h2, h3, a, ul, li{
 }
 
 .detalhes-texto li{
-    list-style: none;
+    list-style: '• ';
     font-size: 1rem;
-}
-
-.detalhes-texto li::before{
-    content: '•';
-    color: #032624;
-    margin-right: 5px;
+    list-style-position: inside;
 }
 
 /* Footer */
@@ -367,32 +353,32 @@ body, h1, h2, h3, a, ul, li{
     margin: 32px 0;
 }
 
-/* Serviços */
+/* Servicos */
 
-.serviços{
+.servicos{
     width: 131px;
 }
 
-.serviços ul{
+.servicos ul{
     list-style: none;
     line-height: 2.2;
 }
 
-.serviços h3{
+.servicos h3{
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 24px;
 }
 
-/* Endereço */
+/* Endereco */
 
-.endereço{
+.endereco{
     display: flex;
     flex-direction: column;
     max-width: 412px;
 }
 
-.endereço-item{
+.endereco-item{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -400,16 +386,16 @@ body, h1, h2, h3, a, ul, li{
 }
 
 
-.endereço-item-texto{
+.endereco-item-texto{
     margin: 0 40px;
 }
 
-.endereço-item-texto h3{
+.endereco-item-texto h3{
     font-weight: 600;
     font-size: 1rem;
 }
 
-.endereço-icone{
+.endereco-icone{
     display: flex;
     background-color: white;
     flex-shrink: 0;
@@ -422,8 +408,16 @@ body, h1, h2, h3, a, ul, li{
 
 /* Responsivo */
 
+@media screen and (max-device-width: 1200px){
+    .como-funciona-1{
+        max-width: 844px;
+    }
+    .como-funciona-item-4{
+        margin: 30px auto 0;
+    }
+}
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1024px){
     .menu-icone{
         display: block;
         background-color: transparent;
@@ -467,32 +461,14 @@ body, h1, h2, h3, a, ul, li{
     .abrir-menu{
         display: block;
     }
-}
-
-@media screen and (max-device-width: 1300px){
-    .como-funciona-1{
-        max-width: 844px;
-    }
-    .como-funciona-item-4{
-        margin: 30px auto 0;
-    }
-}
-
-@media screen and (max-device-width: 1048px){
-    .como-funciona-1{
-        max-width: 553px;
-    }
-    .como-funciona-item-4{
-        margin: 30px 0 0;
-    }
     .contato{
         justify-content: center;
     }
-    .endereço{
+    .endereco{
         flex-direction: row;
         max-width: none;
     }
-    .contato-1, .endereço, .serviços{
+    .contato-1, .endereco, .servicos{
         margin: 10px;
     }
 }
@@ -500,6 +476,15 @@ body, h1, h2, h3, a, ul, li{
 @media screen and (max-device-width: 1016px) {
     .novidades{
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-device-width: 900px){
+    .como-funciona-1{
+        max-width: 600px;
+    }
+    .como-funciona-item-4{
+        margin: 30px 0 0;
     }
 }
 
@@ -517,7 +502,7 @@ body, h1, h2, h3, a, ul, li{
     .logo-rocket-talents{
         margin-top: 50px;
     }
-    .endereço{
+    .endereco{
         flex-direction: column;
         max-width: 412px;
     }
@@ -557,27 +542,27 @@ body, h1, h2, h3, a, ul, li{
 
 }
 
-@media screen and (max-device-width: 762px) {
-    .como-funciona-1{
-        max-width: 262px;
-    }
+@media screen and (max-device-width: 768px) {
+
     #email{
         max-width: 300px;
     }
 }
 
-@media screen and (max-device-width: 646px){
-    .serviços{
+@media screen and (max-device-width: 650px){
+    .como-funciona-1{
+        max-width: 262px;
+        margin: auto;
+    }
+    .servicos{
         width: 430px;
     }
 }
 
-@media screen and (max-device-width: 492px){
-
+@media screen and (max-device-width: 480px){
     .como-funciona{
         padding: 50px 20px;
     }
-
     .rocket-talents-background{
         padding: 0;
     }

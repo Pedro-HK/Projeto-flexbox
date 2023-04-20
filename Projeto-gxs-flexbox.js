@@ -8,7 +8,7 @@
             document.querySelector('.icone-menu').src = 'icones/SVG/menu.svg'
         } else{
             abrirMenu.classList.add('abrir-menu')
-            document.querySelector('.icone-menu').src = 'icones/SVG/menu4.svg' //trocar icone
+            document.querySelector('.icone-menu').src = 'icones/SVG/cross.svg'
         }
     })
 })()
